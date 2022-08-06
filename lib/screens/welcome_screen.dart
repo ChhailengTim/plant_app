@@ -1,10 +1,17 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:plant_app/models/app_bar.dart';
+import 'package:plant_app/models/button_nav_bar.dart';
+import 'package:plant_app/screens/body_screen.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({Key? key}) : super(key: key);
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: buildAppBar(),
+      body: const BodyScreen(),
+      bottomNavigationBar: const ButtonNavBar(),
+    );
   }
 }

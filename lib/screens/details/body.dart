@@ -24,7 +24,7 @@ class BodyDetail extends StatelessWidget {
                 ButtonBuyNow(
                   color: Colors.transparent,
                   textcolor: Colors.black,
-                  title: "Describetion",
+                  title: "Description",
                 ),
               ],
             ),
